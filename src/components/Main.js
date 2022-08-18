@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import tether from '../img/tether.png'
+import Airdrop from "./Airdrop";
 
 class Main extends Component {
     render(){
@@ -50,7 +51,7 @@ class Main extends Component {
                         event.preventDefault(this.props.unstackToken());
                     }} className="btn btn-primary btn-lg btn-block">WITHDRAW</button>
                     <div className="card-body text-center" style={{color:'blue'}}>
-                    AIRDROP
+                    AIRDROP <Airdrop stackingBalance = {this.props.stackingBalance}/>
                     </div>
                 </div>
             </div>
