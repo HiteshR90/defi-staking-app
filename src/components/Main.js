@@ -7,13 +7,13 @@ class Main extends Component {
             <div id="content" className="mt-3">
                 <table className="table text-center text-muted">
                     <thead>
-                        <tr style={{color:'black'}}>
+                        <tr style={{color:'white'}}>
                             <th scope="col">Stacking Balance</th>
                             <th scope="col">Reward Balance</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style={{color:'black'}}>
+                        <tr style={{color:'white'}}>
                             <td>{window.web3.utils.fromWei(this.props.rwdBalance, 'Ether')} USDT</td>
                             <td>{window.web3.utils.fromWei(this.props.stackingBalance, 'Ether')} RWD</td>
                         </tr>
